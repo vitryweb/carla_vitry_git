@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu de Restaurant</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+        color: #333;
+      }
+      header {
+        background-color: #ff7f50;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 2rem;
+      }
+      .menu {
+        max-width: 800px;
+        margin: 20px auto;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+      .menu h2 {
+        border-bottom: 2px solid #ff7f50;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+      }
+      .menu-section {
+        margin-bottom: 20px;
+      }
+      .menu-section h3 {
+        color: #ff7f50;
+        margin-bottom: 10px;
+      }
+      .menu-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border-bottom: 1px solid #f0f0f0;
+      }
+      .menu-item:last-child {
+        border-bottom: none;
+      }
+      .menu-item span {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Menu de Restaurant</header>
+
+    <div class="menu">
+      <div class="menu-section">
+        <h2>Plats</h2>
+        <div class="menu-item">
+          <span>Pizza Margherita</span>
+          <span>12€</span>
+        </div>
+        <div class="menu-item">
+          <span>Burger</span>
+          <span>15€</span>
+        </div>
+        <div class="menu-item">
+          <span>Salade César</span>
+          <span>10€</span>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <h2>Desserts</h2>
+        <div class="menu-item">
+          <span>Tiramisu</span>
+          <span>7€</span>
+        </div>
+        <div class="menu-item">
+          <span>Crème brûlée</span>
+          <span>8€</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

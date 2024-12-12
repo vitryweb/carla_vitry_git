@@ -1,0 +1,18 @@
+# Fichiers système
+.DS_Store             # Fichiers générés par macOS
+Thumbs.db             # Fichiers générés par Windows
+
+# Dossiers ou fichiers temporaires
+tmp/
+temp/
+*.bak                 # Fichiers de sauvegarde
+
+# Fichiers CSS générés automatiquement (si tu utilises un préprocesseur, comme Sass ou Less)
+*.css.map
+
+# Fichiers de build (si tu utilises un outil qui génère des fichiers, comme Webpack)
+dist/
+build/
+
+# Fichiers Git
+.git/

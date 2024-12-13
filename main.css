@@ -32,12 +32,23 @@ header {
   color: #ff7f50;
   margin-bottom: 10px;
 }
+
 .menu-item {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 8px 0;
   border-bottom: 1px solid #f0f0f0;
 }
+
+.menu-item span:nth-child(2) {
+  text-align: end;
+}
+
+.menu-item p {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
 .menu-item:last-child {
   border-bottom: none;
 }

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Vérification des fichiers HTML
+for file in $(git diff --cached --name-only --diff-filter=ACM | grep '\.html$'); do
+    if ! tidy -q -e "$file"; then
+        echo "Erreur : Le fichier $file contient des erreurs HTML. Corrige-les avant de committer."
+        exit 1
+    else
+        echo "Hook pre-commit : tout est OK !"
+    exit 0
+    fi
+done
+
+exit 0
